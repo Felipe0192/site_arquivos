@@ -1,0 +1,102 @@
+/*descobri que tem como baixar e importar coisas aqui no css como fontes e tb fazer variaveis,
+ mt massa maas agora vou so baixar uma fonte 
+e vou usar no body pq ai nao precisa ficar alterando pq é fonte padrao do sistema*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+
+body{
+
+    background-color: #f5f5fa;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0; /*isso faz que fique sem aquele espco sobrando*/
+
+}
+
+#titulo{
+    text-align: center;
+    padding-top: 10px;      /* para cima*/
+    padding-right: 30px;    /* para direita*/
+    padding-bottom: 10px; /*para baixo*/
+    padding-left: 30px;    /* para esquerda*/
+    max-width: 500px; /*esse poe um limite maximo da largura*/
+    margin: auto;     /*ele centraliza nao especificamente o texto mas tudo*/
+    background-color: #ff914d;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+/* vamo prr tu conecta essa prr no head do html
+ agora vou centralizar o botao */
+
+/* fodasse o negocio é usar div ou tipo as div pq pqp trabalho da prr*/
+
+/* o width e height ele muda o tamanho total, mas tb a cordenada*/
+/*o background ele se adapta ao tamanho da "borda"*/
+
+#subtitulo{
+
+    color: #333333;
+    text-align: center;
+
+}
+
+#button-principal {
+    color: #000;
+    border-radius: 10px; /*arredonda a borda pq radiu é raio a ai redondo,etc...*/
+    width: 375px;
+    height: 50px;
+    font-size: medium;
+    background-color: #ff914d;
+    font-size: 20px;
+    
+}
+/* assim tu seleciona pelo # é o id
+para selecionar pela classe uam o "." ai pode usar os dois tb */
+
+/* o background é oq ta no fundo e o border é oq ta em volta do negocio,
+ e esse style é o efeito mas o js deve fazer melhor
+
+/* o button so serve pra coisas dentro do button mas pra organizar
+ ele tem que estar em um container ou seja uma divai deu certo */
+
+#div-button {
+
+    text-align: center;
+    position: relative; /*relaciona com base nos outros,o absolute é com base no seu ancestral ou nada entao é mais fodasse,o estatic ele nao se mexee o stick e outro eu nao entendi eu vejo amanha a parte teorica*/
+    top: 200px;
+    margin: auto;
+    
+
+    
+    
+    
+}
+/*foi prr coloquei o button dentro da div ai deu certo,
+ pq a div é o generico e trocar a cor da div nao segnifica nada pro button*/
+
+#github{
+    position: relative;
+    left: 1200px;    
+    bottom: 250px;
+           /*esse margin ele organiza essa div meio que padronizado aos modelos de site*/
+
+}
+
+#github-icon{
+
+    width: 50px;
+    height: 50px;
+
+}
+
+#explicacao{
+
+    color: #333333;
+
+}
