@@ -9,7 +9,7 @@ e vou usar no body pq ai nao precisa ficar alterando pq é fonte padrao do siste
 
 body{
 
-    background-color: #f5f5fa;
+    background-color: whitesmoke;
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0; /*isso faz que fique sem aquele espco sobrando*/
 
@@ -20,16 +20,14 @@ body{
     padding-top: 10px;      /* para cima*/
     padding-right: 30px;    /* para direita*/
     padding-bottom: 10px; /*para baixo*/
-    padding-left: 30px;    /* para esquerda*/
-    max-width: 500px; /*esse poe um limite maximo da largura*/
-    margin: auto;     /*ele centraliza nao especificamente o texto mas tudo*/
+    padding-left: 30px;    /* para esquerda*/ /*esse poe um limite maximo da largura*/
+    margin: auto;     /*Isso é a margem, mas ele tb centraliza ai da pra mexer*/ 
     background-color: #ff914d;
-    border-radius: 5px;
 }
 
 h1 {
     text-align: center;
-    color: black;
+    color: white;
 }
 /* vamo prr tu conecta essa prr no head do html
  agora vou centralizar o botao */
@@ -46,16 +44,8 @@ h1 {
 
 }
 
-#button-principal {
-    color: #000;
-    border-radius: 10px; /*arredonda a borda pq radiu é raio a ai redondo,etc...*/
-    width: 375px;
-    height: 50px;
-    font-size: medium;
-    background-color: #ff914d;
-    font-size: 20px;
-    
-}
+/*tirei as coisas do botton principal pq deixou de existir agora é um input file*/
+
 /* assim tu seleciona pelo # é o id
 para selecionar pela classe uam o "." ai pode usar os dois tb */
 
@@ -81,9 +71,9 @@ para selecionar pela classe uam o "." ai pode usar os dois tb */
  pq a div é o generico e trocar a cor da div nao segnifica nada pro button*/
 
 #github{
-    position: relative;
+    position: absolute;
     left: 1200px;    
-    bottom: 250px;
+    bottom: 485px;
            /*esse margin ele organiza essa div meio que padronizado aos modelos de site*/
 
 }
@@ -98,5 +88,22 @@ para selecionar pela classe uam o "." ai pode usar os dois tb */
 #explicacao{
 
     color: #333333;
+
+}
+
+#button-principal{
+
+    display: none; /*por isso que fica decente esse diplay padrao é horrivel*/
+}
+
+.button{
+
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: solid #ff914d 2px;
+    text-align: center;
 
 }

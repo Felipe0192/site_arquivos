@@ -9,13 +9,19 @@
 </head>
 <body>
 
-    <div id = "titulo"><h1>Conversor de Arquivos</h1></div>
+    <div id = "titulo">
+        <h1>Conversor de Arquivos</h1>
+    </div>
+    <!--TEM que ser desse jeito pq é clean code kkkk, mas to com preguica faço dps-->
     
     <h2 id= "subtitulo">Aqui neste site voçê vai poder converter seus arquivos de graça e online. </h2>
     
 
-    <div id = "div-button"><input id ="button-principal" name="arquivo" type="file" title="Faça o upload">
-        <p id="explicacao">Arraste ou selecione os seus arquivos aqui</p></div>
+    <div id = "div-button">
+        <label for="button-principal" class="button">Selcione os Arquivos</label><!--é dai que vai vir tudo, e vai usar a mesma classe pra estilizar os dois no css-->
+        <input id ="button-principal" type="file" title="Faça o upload" class="button">
+        <p id="explicacao">Arraste ou selecione os seus arquivos aqui</p>
+    </div>
     
     <!-- resumindo tu adiciona o id ou a 
      classe, o id é o nome é unico e a classe é uma familia isso
