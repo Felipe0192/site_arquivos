@@ -5,8 +5,6 @@ e vou usar no body pq ai nao precisa ficar alterando pq é fonte padrao do siste
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
-
-
 body{
 
     background-color: whitesmoke;
@@ -117,6 +115,7 @@ para selecionar pela classe uam o "." ai pode usar os dois tb */
     display: none;
     margin: none;
     width: 850px;
+    bottom: 200px;
     position: absolute;
     right: 200px;
     text-align: left;
