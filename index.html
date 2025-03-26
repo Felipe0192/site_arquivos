@@ -14,7 +14,7 @@
     </div>
     <!--TEM que ser desse jeito pq é clean code kkkk, mas to com preguica faço dps-->
     
-    <h2 id= "subtitulo">Aqui neste site você vai poder converter seus arquivos de forma online e totalmente de graça . </h2>
+    <h2 id= "subtitulo">Aqui neste site você vai poder converter seus arquivos de forma online e totalmente de graça</h2>
     
 
     <div id = "div-button">
@@ -43,6 +43,21 @@
         <!--O oninput ele serve para chamar uma funcao do js toda vez que for alterado o input e ai coloquei no js uma funcao que printa
          esse evento ou seja a alteracao pegando o parametro de valor atual-->
 
+    <div id="conversor" title="Selecione o seu formato de arquivo final, e clique em CONVERTER">
+        <div id="arquivo-original">arquivo original</div>
+        <label for="formato-arquivo">Selecione:</label>
+
+        <select name="arquivos" id="formato-arquivo"> 
+            <option value="pdf">PDF</option>
+            <option value="rar">RAR</option>
+            <option value="png">PNG</option>
+            <option value="jpeg">JPEG</option>
+        </select>
+
+        <label for="button-convert" class="b-convert">Converter</label>
+        <button id="button-convert">Converter</button>
+
+    </div>
 
     <script src="scripts.js"></script><!--sempre deixa no final pra nao dar merda-->
 </body>

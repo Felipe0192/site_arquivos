@@ -60,22 +60,18 @@ para selecionar pela classe uam o "." ai pode usar os dois tb */
     text-align: center;
     position: relative; /*relaciona com base nos outros,o absolute é com base no seu ancestral ou nada entao é mais fodasse,o estatic ele nao se mexee o stick e outro eu nao entendi eu vejo amanha a parte teorica*/
     top: 200px;
-    margin: auto;
-    
+    margin: auto; 
 
-    
-    
-    
 }
 /*foi prr coloquei o button dentro da div ai deu certo,
  pq a div é o generico e trocar a cor da div nao segnifica nada pro button*/
 
 #github{
+
     position: absolute;
     left: 1200px;    
     bottom: 485px;
            /*esse margin ele organiza essa div meio que padronizado aos modelos de site*/
-
 }
 
 #github-icon{
@@ -91,6 +87,9 @@ para selecionar pela classe uam o "." ai pode usar os dois tb */
 
 }
 
+
+
+
 #button-principal{
 
     display: none; /*por isso que fica decente esse diplay padrao é horrivel*/
@@ -101,9 +100,65 @@ para selecionar pela classe uam o "." ai pode usar os dois tb */
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 10px;
+    padding-bottom:10px;
     border-radius: 10px;
     border: solid #ff914d 2px;
     text-align: center;
+
+}
+
+
+
+
+
+
+#conversor{
+
+    display: none;
+    margin: none;
+    width: 850px;
+    position: absolute;
+    right: 200px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    background-color: gainsboro;
+}
+
+#arquivo-original{
+
+    margin: none;
+    position: absolute;
+    left: 0px;
+    width: 125px;
+    bottom: 122px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border-radius: 2px; 
+    border: 2px;
+    background-color: darkorange;
+
+}
+
+#button-convert{
+    display: none; /*nessa deixa so de tirar o display e na label faz o resto*/
+}
+
+.b-convert{
+
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+    border-radius: 12px;
+    background-color: darkorange;
+    text-align: center; 
+    position: absolute;
+    right: 20px;
 
 }

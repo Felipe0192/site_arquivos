@@ -8,3 +8,9 @@ function valor_teste(event) {
  //puxou o codigo sem o valuekkkkk
 //acho que nao tava indo pq o js tava careegando mt cedo 
 // pq ele ta la em cima no body, o ocrreto é deixar o link do scrpt la no final do body
+
+
+
+//preciso fazer que a pagina faca um efeito e apareca o arquivo visualizado 
+// e mude um pouco o layout tipo 
+//fizemos a parte facil agora precisa ir para media dps a dificl que vai ser o back
