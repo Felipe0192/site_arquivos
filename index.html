@@ -10,7 +10,7 @@
 <body>
 
     <div id = "titulo">
-        <h1>Conversor de Arquivos</h1>
+        <h1 >Conversor de Arquivos</h1>
     </div>
     <!--TEM que ser desse jeito pq é clean code kkkk, mas to com preguica faço dps-->
     
@@ -18,8 +18,8 @@
     
 
     <div id = "div-button">
-        <label for="button-principal" class="button">Selecione os Arquivos</label><!--é dai que vai vir tudo, e vai usar a mesma classe pra estilizar os dois no css-->
-        <input id ="button-principal" type="file" title="Faça o upload" class="button" oninput=valor_teste(event)>
+        <label for="button-principal" class="button" title="Faça o upload do arquivo.">Selecione os Arquivos</label><!--é dai que vai vir tudo, e vai usar a mesma classe pra estilizar os dois no css-->
+        <input id ="button-principal" type="file" class="button" oninput=valor_teste(event)>
         <p id="explicacao">Arraste ou selecione os seus arquivos aqui</p>
     </div>
     
@@ -29,7 +29,7 @@
 
 
     <div id="github"><a id = "link-git" href="https://github.com/Felipe0192" target="_blank">
-        <img id = "github-icon" src="icone-github-preto.png" alt="Link do github" title="Link do meu github"></a></div>
+        <img id = "github-icon" src="icone-github-preto.png" alt="Link do github" title="Link do meu github" cursor="pointer"></a></div>
     <!--O target ele mostra como vai ser aberto o link, o blanck ele abre uma aba nova acho bom isso-->
    
     <!--Usei dentro da img a funcao title que da um explicacao ou titulo-->
@@ -44,15 +44,24 @@
          esse evento ou seja a alteracao pegando o parametro de valor atual-->
 
     <div id="conversor" title="Selecione o seu formato de arquivo final, e clique em CONVERTER">
-        <div id="arquivo-original"></div>
-        <label for="formato-arquivo">Selecione:</label>
+        <div id="arquivo-original">
+        </div>
+        <label for="formato-arquivo">Selecione:</label> <!--é literalmente um placeholder-->
 
-        <select name="arquivos" id="formato-arquivo"> 
-            <option value="pdf">PDF</option>
-            <option value="rar">RAR</option>
-            <option value="png">PNG</option>
-            <option value="jpeg">JPEG</option>
-        </select>
+        <div id="css-arquivos">
+            <select name="arquivos" id="formato-arquivo">
+                <option value="jpg">JPG</option>
+                <option value="png">PNG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="gif">GIF</option>
+                <option value="bmp">BMP</option>
+                <option value="png">PNG</option>
+                <option value="tiff">TIFF</option> <!--provavelmente no python vai ter que formatar para ficar tudo minusculo-->
+
+            </select>
+            <label for="formato-arquivo" id="label-arquivo" class="arquivo">Formatos:</label><!--no js a gente muda puxando a variavel com base no formato escolhido -->
+        </div>
+        
 
         <label for="button-convert" class="b-convert">Converter</label>
         <button id="button-convert">Converter</button>
