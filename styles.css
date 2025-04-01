@@ -184,6 +184,7 @@ para selecionar pela classe uam o "." ai pode usar os dois tb */
 
 #label-arquivo{
 
+    color: #8e8e8e;
     margin: none;
     padding-top: 8px;
     padding-left: 10px;
@@ -224,5 +225,11 @@ para selecionar pela classe uam o "." ai pode usar os dois tb */
 #arquivo-original{
 
     cursor: default;
+
+}
+
+#tela_donwload{
+
+    display: none;
 
 }

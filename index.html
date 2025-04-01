@@ -10,11 +10,11 @@
 <body>
 
     <div id = "titulo">
-        <h1 >Conversor de Arquivos</h1>
+        <h1 >Conversor de Imagem</h1>
     </div>
     <!--TEM que ser desse jeito pq é clean code kkkk, mas to com preguica faço dps-->
     
-    <h2 id= "subtitulo">Aqui neste site você vai poder converter seus arquivos de forma online e totalmente de graça</h2>
+    <h2 id= "subtitulo">Aqui neste site você vai poder converter seus arquivos de imagem de forma online e totalmente de graça</h2>
     
 
     <div id = "div-button">
@@ -49,24 +49,26 @@
         <label for="formato-arquivo">Selecione:</label> <!--é literalmente um placeholder-->
 
         <div id="css-arquivos">
-            <select name="arquivos" id="formato-arquivo">
-                <option value="jpg">JPG</option>
-                <option value="png">PNG</option>
-                <option value="jpeg">JPEG</option>
-                <option value="gif">GIF</option>
-                <option value="bmp">BMP</option>
-                <option value="png">PNG</option>
-                <option value="tiff">TIFF</option> <!--provavelmente no python vai ter que formatar para ficar tudo minusculo-->
+            <select name="arquivos" id="formato-arquivo" oninput=pegar_variavel(event)>
+                <option value="jpg">jpg</option>
+                <option value="png">png</option>
+                <option value="jpeg">jpeg</option>
+                <option value="gif">gif</option>
+                <option value="bmp">bmp</option>
+                <option value="png">png</option>
+                <option value="tiff">tiff</option> <!--provavelmente no python vai ter que formatar para ficar tudo minusculo-->
 
             </select>
-            <label for="formato-arquivo" id="label-arquivo" class="arquivo">Formatos:</label><!--no js a gente muda puxando a variavel com base no formato escolhido -->
+            <label for="formato-arquivo" id="label-arquivo" class="arquivo" >Formatos</label><!--no js a gente muda puxando a variavel com base no formato escolhido -->
         </div>
         
 
         <label for="button-convert" class="b-convert">Converter</label>
-        <button id="button-convert">Converter</button>
+        <button id="button-convert" >Converter</button>
 
     </div>
+
+    <div id="tela_donwload">tela downloa teste</div>
 
     <script src="scripts.js"></script><!--sempre deixa no final pra nao dar merda-->
 </body>
