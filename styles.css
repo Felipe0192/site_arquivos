@@ -149,7 +149,9 @@ para selecionar pela classe uam o "." ai pode usar os dois tb */
 
 #button-convert{
 
-    display: none; /*nessa deixa so de tirar o display e na label faz o resto*/
+    opacity: 0;
+    z-index: 1;
+
 }
 
 .b-convert{

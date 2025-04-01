@@ -66,24 +66,34 @@ function tela_download() { // esse vai abrir a tela de download e fechara de con
 }
 
 
+//comecar agora a requisicao http vou usar o form data e ai enviar via post ou pra um xhtml ou um fetch
+
+let form_data = new FormData();
+var inputfile;
+var button_count = 0;
+var request;
+
+function envio_form(event) {
+
+    button_count = 1;
+
+    if (button_count === 1)
+        inputfile = document.getElementById("button-principal");
 
 
+    if (inputfile.files.length > 0) {
+        form_data.append("arquivo", inputfile.files[0]);
+        form_data.append("formato", formato_final)
 
+        fetch('https://postb.in/1743548109621-3164947689510', { // aonde que vai ser o servidor
 
+            method: 'POST', // forma que vai enviar ou receber
+            body: form_data // conteudo da requisição
+            
+        })
+    }
+}
 
-// no js o if tem que estar entre parenteses
-
-
-
-// agora esta printando no console o caminho do arquivo
-//  mt facil ter feito esse place holder e dps passado pro original
-
-//puxou o codigo sem o valuekkkkk
-//acho que nao tava indo pq o js tava careegando mt cedo
-// pq ele ta la em cima no body, o ocrreto é deixar o link do scrpt la no final do body
-
-
-
-//preciso fazer que a pagina faca um efeito e apareca o arquivo visualizado
-// e mude um pouco o layout tipo
-//fizemos a parte facil agora precisa ir para media dps a dificl que vai ser o back
+//hj fazer pelo menos a parte do form data e ai se der envia o e decide se é melhor xhtml ou fetch
+//  e ai amanha a gente foca em receber e garantir esse envio e o codigo de converter e dps de amanha
+//  a gente faz o final de js e coloca o drag and drop e ai ta bront
